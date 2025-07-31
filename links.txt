@@ -1,0 +1,23 @@
+api key
+45f5014d952f8facff8b2d26810cce4a
+
+token 
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NWY1MDE0ZDk1MmY4ZmFjZmY4YjJkMjY4MTBjY2U0YSIsIm5iZiI6MTc1MzcxMzE0NS40NjgsInN1YiI6IjY4ODc4OWY5OTBjNzM3ZGFkNzE2YzliMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.xlOyrl3YAkYgF7f400ML1wA3hKwBFVqGZdnQA5f5WO0
+
+get movie 
+https://api.themoviedb.org/3/movie/{movie_id}?api=45f5014d952f8facff8b2d26810cce4a
+
+popular
+https://api.themoviedb.org/3/movie/popular?api=45f5014d952f8facff8b2d26810cce4a
+
+now playing
+https://api.themoviedb.org/3/movie/now_playing?api=45f5014d952f8facff8b2d26810cce4a
+
+top rated 
+https://api.themoviedb.org/3/movie/top_rated?api=45f5014d952f8facff8b2d26810cce4a
+
+up coming 
+https://api.themoviedb.org/3/movie/upcoming?api=45f5014d952f8facff8b2d26810cce4a
+
+search 
+https://api.themoviedb.org/3/search/movie?api=45f5014d952f8facff8b2d26810cce4a&query={query-string}
