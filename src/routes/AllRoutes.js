@@ -9,7 +9,22 @@ export function AllRoutes() {
           path="/"
           element={<MovieList apiPath="movie/now_playing" title="Home" />}
         />
-        {/* ... مسارات أخرى */}
+        <Route path="movie/:id" element={<MovieDetail />} />
+
+        <Route
+          path="movies/popular"
+          element={<MovieList apiPath="movie/popular" title="Popular" />}
+        />
+
+        <Route
+          path="movies/top"
+          element={<MovieList apiPath="movie/top_rated" title="Top Rated" />}
+        />
+
+        <Route
+          path="movies/upcoming"
+          element={<MovieList apiPath="movie/upcoming" title="Upcoming" />}
+        />
         <Route
           path="movies/Iraqi"
           element={
