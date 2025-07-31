@@ -3,7 +3,6 @@ import { Card } from "../components/Card";
 import { ErrorMessage } from "../components/ErrorMessage";
 import { Spinner } from "../components/Spinner";
 import { useFetch } from "../hooks/useFetch";
-// استيراد مكون الزر
 import { Button } from "../components/Button";
 import { useTitle } from "../hooks/useTitle";
 
@@ -49,19 +48,19 @@ export function MovieList({ apiPath, title }) {
 
         {!loading && !error && movies && movies.length > 0 && (
           // إضافة `gap-x-4` للفصل بين الأزرار
-          <div className="flex justify-between my-8 gap-x-4">
+          <div className="flex justify-between items-center my-8 gap-x-4">
             <Button
               onClick={handlePreviousPage}
               disabled={page === 1}
               // يمكنك تخصيص الستايل هنا إذا أردت
             >
-              السابق
+              Previous
             </Button>
-            <span className="self-center text-lg font-bold text-gray-700 dark:text-white">
-              صفحة {page} من {totalPages}
+            <span className="self-center text-sm md:text-lg font-bold text-gray-700 dark:text-white">
+              Page {page} of {totalPages}
             </span>
             <Button onClick={handleNextPage} disabled={page === totalPages}>
-              التالي
+              Next
             </Button>
           </div>
         )}

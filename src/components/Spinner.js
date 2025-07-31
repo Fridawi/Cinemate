@@ -1,8 +1,6 @@
 export const Spinner = () => {
   return (
     <div className="flex justify-center items-center h-full w-full">
-      {" "}
-      {/* لتوسيط الـ spinner نفسه */}
       <div
         className="
           w-12 h-12 

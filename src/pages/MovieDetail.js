@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom"; // تأكد من استيراد Link
+import { useParams, Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import { useTitle } from "../hooks/useTitle";
 import { Spinner } from "../components/Spinner";
