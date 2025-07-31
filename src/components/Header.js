@@ -240,6 +240,50 @@ export const Header = () => {
                   Upcoming
                 </NavLink>
               </li>
+
+              <li>
+                <NavLink
+                  to="/movies/anime"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : inActiveClass
+                  }
+                >
+                  Anime
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/movies/Iraqi"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : inActiveClass
+                  }
+                >
+                  Iraqi Movies
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/movies/egyptian"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : inActiveClass
+                  }
+                >
+                  Egyptian Movies
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/movies/arabian"
+                  className={({ isActive }) =>
+                    isActive ? activeClass : inActiveClass
+                  }
+                >
+                  Arabian Movies
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

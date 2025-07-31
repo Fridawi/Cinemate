@@ -6,8 +6,9 @@ import { useFetch } from "../hooks/useFetch";
 import { Button } from "../components/Button";
 import { useTitle } from "../hooks/useTitle";
 
-export function MovieList({ apiPath, title }) {
+export function MovieList({ apiPath, title, query: initialQuery = "" }) {
   const [page, setPage] = useState(1);
+  const finalQuery = `${initialQuery}${initialQuery ? "&" : ""}page=${page}`;
 
   useTitle(title);
   const {
@@ -16,9 +17,8 @@ export function MovieList({ apiPath, title }) {
     error,
   } = useFetch({
     path: apiPath,
-    query: `page=${page}`,
+    query: finalQuery,
   });
-
   const movies = response?.results;
   const totalPages = response?.total_pages;
 
